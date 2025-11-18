@@ -20,6 +20,7 @@ require "../../Manager/BoxManager.php";
 
 // Gestion des erreurs
 try {
+     
     if(isset($_GET['id'])){
         $boxManager = new BoxManager();
         $boxes = $boxManager->findById($_GET['id']);
